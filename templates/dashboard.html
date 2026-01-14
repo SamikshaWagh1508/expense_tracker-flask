@@ -27,7 +27,7 @@
         <div class="expense">
             <span>{{ e.title }} ({{ e.category }})</span>
             <span>₹{{ e.amount }} 
-                <a class="delete" href="/delete/{{ e.id }}">✖</a>
+                <button onclick="location.href='/delete/{{ e.id }}'" style="color:red; border:none; background:none; cursor:pointer;">&times;</button>
             </span>
         </div>
         {% endfor %}
